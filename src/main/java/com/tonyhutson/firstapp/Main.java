@@ -47,17 +47,17 @@ public class Main {
         String userInput = scanner.nextLine();
         // Split the input using a space as a delimiter and store in an array
         String[] parts = userInput.split(" ");
-        for(int x = 0; x<parts.length;x++){
-            System.out.println(parts[x]);
+        for (String part : parts) {
+            System.out.println(part);
         }
 
         StringBuilder sb = new StringBuilder((50));
         sb.append(34);
         sb.append(" There is a bear on the tree");
-        String message = sb.toString();
+
         int pos = sb.indexOf("on");
         sb.insert(pos, " >>bing go<<");
-        message = sb.toString();
+        String message = sb.toString();
         System.out.println(message);
 
         String newString = String.format("There is a big house %d tall and %d feet wide.", 50, 30);
