@@ -11,6 +11,7 @@ public class Main {
         theInts[1] = 34;
         theInts[2] = 100;
 
+        // Test line for Git test
         for(int x=0;x<theInts.length;x++){
             System.out.println("Int "+x+" is "+theInts[x]);
         }
@@ -27,12 +28,17 @@ public class Main {
         System.out.println(name);
         System.out.println(anotherName);
         if (name==anotherName) {
-            System.out.println("These are the same.");
+            System.out.println("These are the same. " +
+                    "But we shouldn't use double equals for Strings");
         } else {
             System.out.println("These are not the same.");
         }
 
-        if (name.equals(anotherName)) {
+        System.out.println("Enter a string:");
+        Scanner scanner = new Scanner(System.in);
+        String userInput = scanner.nextLine();
+        System.out.println("User input is: "+userInput);
+        if (name.equals(userInput)) {
             System.out.println("These are the same.");
         } else {
             System.out.println("These are not the same.");
@@ -44,8 +50,8 @@ public class Main {
         if (s3==s4){System.out.println("These strings are the same");}  // This is less expensive
 
         System.out.println("Enter a string of text:");
-        Scanner scanner = new Scanner(System.in);
-        String userInput = scanner.nextLine();
+        //Scanner scanner = new Scanner(System.in);
+        userInput = scanner.nextLine();
         // Split the input using a space as a delimiter and store in an array
         String[] parts = userInput.split(" ");
         for (String part : parts) {
