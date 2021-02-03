@@ -16,6 +16,7 @@ public class Main {
         }
     }
 
+    // Another change testing Git
     private static void stringExample(){
         // Strings are immutable, so new string assignments result in new memory allocations
         String name = "This is";
